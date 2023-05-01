@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider Man</title>
+  <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-content">
+    <div class="header">  
+      <div class="section-1">
+        <div class="logo">
+          <img src="./assets/spider-logo.png">
+        </div>
+        <span class="active">HOME</span>
+        <span>SOBRE</span>
+        <span>PERSONAGENS</span>
+        <span>NOVIDADE</span>
+      </div>
+      <div class="section-2">
+        <div class="search-button">
+          <img src="./assets/search-icon.svg">
+        </div>
+        <div onClick="showSideBar()" class="menu-icon">
+          <img src="./assets/menu.png">
+        </div>
+        <span>BUSCAR</span>
+      </div>
+    </div>
+    <div class="banner-mobile">
+    
+    </div>
+    <div style="right: -250px; height: 100vh;  transition: right 0.3s ease-in-out; background-color: black; position: absolute; top: 0;" id="side-bar">
+      <div onclick="hideSideBar()" class="close-icon">
+          <img src="./assets/close-icon.png">
+      </div>
+      <a class="link-sidebar">HOME</a>
+      <hr>
+      <a class="link-sidebar">SOBRE</a>
+      <hr>
+      <a class="link-sidebar">PERSONAGENS</a>
+      <hr>
+      <a class="link-sidebar">NOVIDADES</a>
+      <hr>
+      <a class="search-sidebar">
+        <div class="search-button-sidebar">
+          <img src="./assets/search-icon.svg">
+        </div>
+      Buscar</a>
+      <hr>
+    </div>
+    <main >
+      <div class="movie-infos">
+        <div className="logo-full">
+          <img class="logo-img" src="./assets/logo.png">
+        </div>
+        <p>Miles Morales descobre poderes incríveis e explosivos que o diferenciam de seu mentor, Peter Parker. Domine seus ataques Venom bioelétricos, poderes de camuflagem, truques espetaculares com teia, além de dispositivos e habilidades.</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let sideBar = document.getElementById('side-bar');
+
+    function showSideBar() {
+      if (sideBar.style.right === '-250px') {
+        sideBar.style.right = '0px';
+      }
+    }
+
+    function hideSideBar() {
+      if (sideBar.style.right === '0px') {
+        sideBar.style.right = '-250px';
+      }
+    }
+    
+  </script>
+</body>
+</html>
