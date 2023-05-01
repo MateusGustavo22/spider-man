@@ -1,7 +1,7 @@
 ## Landing Page Spider Man
 
-![Screenshot]()
+![Screenshot](https://github.com/MateusGustavo22/spider-man/blob/main/screenshots/screen4.png)
 
-![Screenshot]()
+![Screenshot](https://github.com/MateusGustavo22/spider-man/blob/main/screenshots/screen2.png)
 
-![Screenshot]()
+![Screenshot](https://github.com/MateusGustavo22/spider-man/blob/main/screenshots/screen3.png)
